@@ -13,6 +13,7 @@ import rapunzel from './images/rapunzel.png'
 import raya from './images/raya.jpeg'
 import tiana from './images/tiana.png'
 import shuffle from 'lodash/shuffle'
+import Modal from './Components/Modal.js'
 
 function App() {
   const [openCard, setOpenCard] = useState([])
@@ -52,12 +53,11 @@ function App() {
 
   }, [openCard])
 
+  const [show, setShow] = useState(false)
+
   useEffect(() => {
     if (matched.length === princesses.length) {
-      /*
-      TODO: Connie - handle win state! DONT use 'alert' though, that's too 90s
-       */
-      setTimeout(() => alert("You won!"), 500)
+      setShow(true)
     }
   }, [matched])
 
@@ -70,9 +70,23 @@ function App() {
     setOpenCard((opened) => [...opened, index])
   }
 
+  const reset = () => {
+    // define reset function here
+  }
+
+  const onClose = () => {
+    setShow(false)
+    reset()
+  }
+
   return (
     <div className="App">
       <p>Memory Game</p>
+      { show &&
+        <Modal title='Congratulations!' onClose={onClose} show={show}>
+          <p>You won!</p>
+        </Modal>
+      }
       <div className='cards'>
         {princessPairs.map((princess , index) => {
 

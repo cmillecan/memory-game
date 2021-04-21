@@ -17,12 +17,13 @@ import Modal from './Components/Modal.js'
 
 function App() {
   const [openCard, setOpenCard] = useState([])
-  const [matched, setMatched] = useState([])
+  const [matched, setMatched] = useState(new Set())
   const [princessPairs, setPrincessPairs] = useState([])
+  const [show, setShow] = useState(false)
 
   const princesses = [
     { id: 0, name: 'Tiana', src: tiana },
-    { id: 1, name: 'Anna', src: anna },
+    // { id: 1, name: 'Anna', src: anna },
     // { id: 2, name: 'Ariel', src: ariel },
     // { id: 3, name: 'Aurora', src: aurora },
     // { id: 4, name: 'Belle', src: belle },
@@ -46,24 +47,26 @@ function App() {
     const secondMatch = princessPairs[openCard[1]]
 
     if (secondMatch && firstMatch.id === secondMatch.id) {
-      setMatched([...matched, firstMatch.id])
+      // setMatched([...matched, firstMatch.id])
+      setMatched((currentMatch) => {
+        currentMatch.add(firstMatch.id)
+        return new Set(currentMatch)
+      })
     }
 
     if (openCard.length === 2) setTimeout(() => setOpenCard([]), 1000)
 
   }, [openCard])
 
-  const [show, setShow] = useState(false)
-
   useEffect(() => {
-    if (matched.length === princesses.length) {
+    if (matched.size === princesses.length) {
       setShow(true)
     }
   }, [matched])
 
   const handleFlip = index => {
     // if the card we just clicked on has already been matched, then return early
-    if (matched.includes(princessPairs[index].id)) return
+    if (matched.has(princessPairs[index].id)) return
     // also check if second chosen card is same index as first card
     if (openCard.length === 1 && openCard[0] === index) return
 
@@ -71,7 +74,9 @@ function App() {
   }
 
   const reset = () => {
-    // define reset function here
+    setOpenCard([])
+    setMatched(new Set())
+    setPrincessPairs(shuffle([...princesses, ...princesses]))
   }
 
   const onClose = () => {
@@ -95,7 +100,7 @@ function App() {
           if (openCard.includes(index))
             flipCard = true
 
-          if (matched.includes(princess.id))
+          if (matched.has(princess.id))
             flipCard = true
 
           return (

@@ -10,7 +10,8 @@ const Modal = props => {
       unmountOnExit
       timeout={{ enter: 0, exit: 300 }}
     >
-      <div className={`modal ${props.show ? 'show' : ''}`} onClick={props.onClose}>
+      {/*<div className={`modal ${props.show ? 'show' : ''}`} onClick={props.onClose}>*/}
+      <div className={'modal show'} onClick={props.onClose}>
         <div className='modal-content' onClick={e => e.stopPropagation()}>
           <div className='modal-header'>
             <h4 className='modal-title'>
@@ -21,7 +22,7 @@ const Modal = props => {
             {props.children}
           </div>
           <div className='modal-footer'>
-            <button className='button' onClick={props.onClose}>Reset</button>
+            <button className='button' onClick={props.onClose}>Play Again!</button>
           </div>
         </div>
       </div>

@@ -20,6 +20,7 @@ function App() {
   const [matched, setMatched] = useState(new Set())
   const [princessPairs, setPrincessPairs] = useState([])
   const [show, setShow] = useState(false)
+  const [countMove, setCountMove] = useState(0)
 
   const princesses = [
     { id: 0, name: 'Tiana', src: tiana },
@@ -43,6 +44,8 @@ function App() {
   useEffect(() => {
     const firstMatch = princessPairs[openCard[0]]
     const secondMatch = princessPairs[openCard[1]]
+
+    if (secondMatch) setCountMove(countMove + 1)
 
     if (secondMatch && firstMatch.id === secondMatch.id) {
       setMatched((currentMatch) => {
@@ -73,6 +76,7 @@ function App() {
   const reset = () => {
     setOpenCard([])
     setMatched(new Set())
+    setCountMove(0)
     setPrincessPairs(shuffle([...princesses, ...princesses]))
   }
 
@@ -83,12 +87,15 @@ function App() {
 
   return (
     <div className="App">
-      <div className='title'><p>Memory Game</p></div>
+      <div className='title'><h1>Memory Game</h1></div>
       { show &&
         <Modal title='Congratulations!' onClose={onClose} show={show}>
           <p>You won!</p>
+          <p>You made {countMove} moves</p>
         </Modal>
       }
+
+      <p>Moves: {countMove}</p>
       <div className='cards'>
         {princessPairs.map((princess , index) => {
 

@@ -20,10 +20,17 @@ body {
   margin-bottom: 20px;
 }
 
-p {
+h1 {
   text-align: center;
   font-size: 50px;
   color: #51dce0;
+  font-weight: normal;
+}
+
+p {
+  text-align: center;
+  font-size: 30px;
+  color: #949494;
   margin-top: 0;
   margin-bottom: 30px;
   margin-right: 10px;

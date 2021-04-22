@@ -1,16 +1,16 @@
 import React from 'react'
 import './Modal.css'
+import ReactDOM from 'react-dom'
 import { CSSTransition } from 'react-transition-group'
 
 const Modal = props => {
 
-  return (
+  return ReactDOM.createPortal(
     <CSSTransition
       in={props.show}
       unmountOnExit
       timeout={{ enter: 0, exit: 300 }}
     >
-      {/*<div className={`modal ${props.show ? 'show' : ''}`} onClick={props.onClose}>*/}
       <div className={'modal show'} onClick={props.onClose}>
         <div className='modal-content' onClick={e => e.stopPropagation()}>
           <div className='modal-header'>
@@ -26,7 +26,8 @@ const Modal = props => {
           </div>
         </div>
       </div>
-    </CSSTransition>
+    </CSSTransition>,
+    document.getElementById('root')
   )
 
 }

@@ -23,21 +23,19 @@ function App() {
 
   const princesses = [
     { id: 0, name: 'Tiana', src: tiana },
-    // { id: 1, name: 'Anna', src: anna },
-    // { id: 2, name: 'Ariel', src: ariel },
-    // { id: 3, name: 'Aurora', src: aurora },
-    // { id: 4, name: 'Belle', src: belle },
-    // { id: 5, name: 'Cinderella', src: cinderella },
-    // { id: 6, name: 'Jasmine', src: jasmine },
-    // { id: 7, name: 'Moana', src: moana },
-    // { id: 8, name: 'Mulan', src: mulan },
-    // { id: 9, name: 'Pocahontas', src: pocahontas },
-    // { id: 10, name: 'Rapunzel', src: rapunzel },
-    // { id: 11, name: 'Raya', src: raya },
+    { id: 1, name: 'Anna', src: anna },
+    { id: 2, name: 'Ariel', src: ariel },
+    { id: 3, name: 'Aurora', src: aurora },
+    { id: 4, name: 'Belle', src: belle },
+    { id: 5, name: 'Cinderella', src: cinderella },
+    { id: 6, name: 'Jasmine', src: jasmine },
+    { id: 7, name: 'Moana', src: moana },
+    { id: 8, name: 'Mulan', src: mulan },
+    { id: 9, name: 'Pocahontas', src: pocahontas },
+    { id: 10, name: 'Rapunzel', src: rapunzel },
+    { id: 11, name: 'Raya', src: raya },
   ]
 
-  // we use useLayoutEffect so that the pairs are all shuffled and set before we even 'paint'
-  // to the dom. 'paint' here means to allow react to write to the DOM.
   useLayoutEffect(() => {
     setPrincessPairs(shuffle([...princesses, ...princesses]))
   }, [])
@@ -47,7 +45,6 @@ function App() {
     const secondMatch = princessPairs[openCard[1]]
 
     if (secondMatch && firstMatch.id === secondMatch.id) {
-      // setMatched([...matched, firstMatch.id])
       setMatched((currentMatch) => {
         currentMatch.add(firstMatch.id)
         return new Set(currentMatch)
@@ -60,7 +57,7 @@ function App() {
 
   useEffect(() => {
     if (matched.size === princesses.length) {
-      setShow(true)
+      setTimeout(() => setShow(true), 800)
     }
   }, [matched])
 
@@ -86,7 +83,7 @@ function App() {
 
   return (
     <div className="App">
-      <p>Memory Game</p>
+      <div className='title'><p>Memory Game</p></div>
       { show &&
         <Modal title='Congratulations!' onClose={onClose} show={show}>
           <p>You won!</p>

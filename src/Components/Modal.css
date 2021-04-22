@@ -29,7 +29,7 @@
 }
 
 .modal-content {
-    width: 350px;
+    width: 400px;
     border-radius: 10px;
     background-color: #ffffff;
     transform: translateY(0200px);
@@ -42,15 +42,26 @@
 }
 
 .modal-header, .modal-footer {
-    padding: 10px;
+    padding: 20px;
 }
 
 .modal-title {
-    margin: 0;
+    font-size: 25px;
 }
 
 .modal-body {
-    padding: 10px;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
+    padding: 0;
+}
+
+button {
+    border: 0;
+    color: dimgray;
+    background-color: aquamarine;
+    padding: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #fac4ca;
+    color: white;
 }

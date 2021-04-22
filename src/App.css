@@ -8,7 +8,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px;
+  padding: 20px;
   line-height: 1;
   font-family: "Patrick Hand", sans-serif;
 }
@@ -17,7 +17,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 20px;
 }
 
 h1 {
@@ -25,11 +24,12 @@ h1 {
   font-size: 50px;
   color: #51dce0;
   font-weight: normal;
+  margin-bottom: 20px;
 }
 
 p {
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
   color: #949494;
   margin-top: 0;
   margin-bottom: 30px;

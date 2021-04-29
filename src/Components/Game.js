@@ -62,7 +62,7 @@ function Game(props) {
   }, [openCard])
 
   useEffect(() => {
-    if (matched.size === princesses.length) {
+    if (matched.size === matchCount) {
       setTimeout(() => setShow(true), 800)
     }
   }, [matched])

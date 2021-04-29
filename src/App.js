@@ -16,8 +16,8 @@ function App() {
       <div className='levels'>
         <p>Choose a level:</p>
         <div className='levels-buttons'>
-          <button onClick={() => setLevel('easy') }>Easy</button>
-          <button onClick={() => setLevel('hard') }>Hard</button>
+          <button className={level === 'easy' ? 'active' : ''} onClick={() => setLevel('easy') }>Easy</button>
+          <button className={level === 'hard' ? 'active' : ''} onClick={() => setLevel('hard') }>Hard</button>
         </div>
       </div>
       {/*{ !level ? null : <Game /> }*/}

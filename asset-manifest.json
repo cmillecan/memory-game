@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/memory-game/static/css/main.4474c445.chunk.css",
-    "main.js": "/memory-game/static/js/main.b3a0c9f1.chunk.js",
-    "main.js.map": "/memory-game/static/js/main.b3a0c9f1.chunk.js.map",
+    "main.css": "/memory-game/static/css/main.aa8c1a0d.chunk.css",
+    "main.js": "/memory-game/static/js/main.b9a185b6.chunk.js",
+    "main.js.map": "/memory-game/static/js/main.b9a185b6.chunk.js.map",
     "runtime-main.js": "/memory-game/static/js/runtime-main.bb0067c4.js",
     "runtime-main.js.map": "/memory-game/static/js/runtime-main.bb0067c4.js.map",
-    "static/js/2.12953da1.chunk.js": "/memory-game/static/js/2.12953da1.chunk.js",
-    "static/js/2.12953da1.chunk.js.map": "/memory-game/static/js/2.12953da1.chunk.js.map",
+    "static/js/2.4d42f155.chunk.js": "/memory-game/static/js/2.4d42f155.chunk.js",
+    "static/js/2.4d42f155.chunk.js.map": "/memory-game/static/js/2.4d42f155.chunk.js.map",
     "index.html": "/memory-game/index.html",
-    "static/css/main.4474c445.chunk.css.map": "/memory-game/static/css/main.4474c445.chunk.css.map",
-    "static/js/2.12953da1.chunk.js.LICENSE.txt": "/memory-game/static/js/2.12953da1.chunk.js.LICENSE.txt",
+    "static/css/main.aa8c1a0d.chunk.css.map": "/memory-game/static/css/main.aa8c1a0d.chunk.css.map",
+    "static/js/2.4d42f155.chunk.js.LICENSE.txt": "/memory-game/static/js/2.4d42f155.chunk.js.LICENSE.txt",
     "static/media/anna.b64a32c6.png": "/memory-game/static/media/anna.b64a32c6.png",
     "static/media/ariel.269f528d.png": "/memory-game/static/media/ariel.269f528d.png",
     "static/media/aurora.fb505559.png": "/memory-game/static/media/aurora.fb505559.png",
     "static/media/belle.529fb2d5.jpg": "/memory-game/static/media/belle.529fb2d5.jpg",
-    "static/media/cinderella.ec174f9e.jpg": "/memory-game/static/media/cinderella.ec174f9e.jpg",
+    "static/media/elsa.d093f80a.jpg": "/memory-game/static/media/elsa.d093f80a.jpg",
     "static/media/jasmine.0744dbe7.png": "/memory-game/static/media/jasmine.0744dbe7.png",
     "static/media/moana.0859844e.png": "/memory-game/static/media/moana.0859844e.png",
     "static/media/mulan.3a6dfda2.png": "/memory-game/static/media/mulan.3a6dfda2.png",
@@ -25,8 +25,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.bb0067c4.js",
-    "static/js/2.12953da1.chunk.js",
-    "static/css/main.4474c445.chunk.css",
-    "static/js/main.b3a0c9f1.chunk.js"
+    "static/js/2.4d42f155.chunk.js",
+    "static/css/main.aa8c1a0d.chunk.css",
+    "static/js/main.b9a185b6.chunk.js"
   ]
 }

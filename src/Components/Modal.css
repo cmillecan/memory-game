@@ -62,6 +62,7 @@ button {
     background-color: aquamarine;
     padding: 8px;
     cursor: pointer;
+    margin: 2px;
 }
 
 button:hover {

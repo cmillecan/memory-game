@@ -1,0 +1,71 @@
+.cards {
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(6, 1fr);
+    gap: 10px;
+}
+
+.cards-easy {
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+    gap: 10px;
+}
+
+img {
+    height: 120px;
+    width: 120px;
+    border-radius: 8px;
+}
+
+.princess-card {
+    height: 120px;
+    width: 120px;
+    border-radius: 2px;
+    background: #000;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.princess-card.flipped .inner {
+    transform: rotateY(180deg);
+}
+
+.inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 0.6s cubic-bezier(0.38, 0.02, 0.09, 1.66) all;
+}
+
+.princess-card .front,
+.princess-card .back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+.princess-card .front {
+    transform: rotateY(180deg);
+}
+
+.princess-card .back {
+    background: #fac4ca;
+    color: #51dce0;
+    font-size: 100px;
+    transition: 0.3s ease all;
+}
+
+.princess-card .back:hover {
+    background: #7ceef1;
+    color: #ffffff;
+    transform: scale(1.02);
+}

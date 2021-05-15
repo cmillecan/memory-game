@@ -38,10 +38,9 @@ function Game(props) {
     { id: 11, name: 'Raya', src: raya },
   ]
 
+
   useLayoutEffect(() => {
     reset()
-    const ps = shuffle(princesses).slice(0, matchCount)
-    setPrincessPairs(shuffle([...ps, ...ps]))
   }, [matchCount])
 
   useEffect(() => {
@@ -80,7 +79,14 @@ function Game(props) {
     setOpenCard([])
     setMatched(new Set())
     setCountMove(0)
-    setPrincessPairs(shuffle([...princesses, ...princesses]))
+    const ps = shuffle(princesses).slice(0, matchCount)
+    setPrincessPairs(shuffle([...ps, ...ps]))
+
+    // set a win() function that you can run in the console to instantly win whatever game you are playing
+    // to speed up dev
+    global.win = () => {
+      setMatched(new Set(ps.map(p => p.id)))
+    }
   }
 
   const onClose = () => {

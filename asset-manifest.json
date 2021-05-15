@@ -1,32 +1,32 @@
 {
   "files": {
     "main.css": "/memory-game/static/css/main.fe8da854.chunk.css",
-    "main.js": "/memory-game/static/js/main.b9a185b6.chunk.js",
-    "main.js.map": "/memory-game/static/js/main.b9a185b6.chunk.js.map",
+    "main.js": "/memory-game/static/js/main.77bf08f2.chunk.js",
+    "main.js.map": "/memory-game/static/js/main.77bf08f2.chunk.js.map",
     "runtime-main.js": "/memory-game/static/js/runtime-main.bb0067c4.js",
     "runtime-main.js.map": "/memory-game/static/js/runtime-main.bb0067c4.js.map",
-    "static/js/2.4d42f155.chunk.js": "/memory-game/static/js/2.4d42f155.chunk.js",
-    "static/js/2.4d42f155.chunk.js.map": "/memory-game/static/js/2.4d42f155.chunk.js.map",
+    "static/js/2.1311842b.chunk.js": "/memory-game/static/js/2.1311842b.chunk.js",
+    "static/js/2.1311842b.chunk.js.map": "/memory-game/static/js/2.1311842b.chunk.js.map",
     "index.html": "/memory-game/index.html",
     "static/css/main.fe8da854.chunk.css.map": "/memory-game/static/css/main.fe8da854.chunk.css.map",
-    "static/js/2.4d42f155.chunk.js.LICENSE.txt": "/memory-game/static/js/2.4d42f155.chunk.js.LICENSE.txt",
-    "static/media/anna.b64a32c6.png": "/memory-game/static/media/anna.b64a32c6.png",
-    "static/media/ariel.269f528d.png": "/memory-game/static/media/ariel.269f528d.png",
-    "static/media/aurora.fb505559.png": "/memory-game/static/media/aurora.fb505559.png",
-    "static/media/belle.529fb2d5.jpg": "/memory-game/static/media/belle.529fb2d5.jpg",
-    "static/media/elsa.d093f80a.jpg": "/memory-game/static/media/elsa.d093f80a.jpg",
-    "static/media/jasmine.0744dbe7.png": "/memory-game/static/media/jasmine.0744dbe7.png",
-    "static/media/moana.0859844e.png": "/memory-game/static/media/moana.0859844e.png",
-    "static/media/mulan.3a6dfda2.png": "/memory-game/static/media/mulan.3a6dfda2.png",
-    "static/media/pocahontas.a86600f9.png": "/memory-game/static/media/pocahontas.a86600f9.png",
-    "static/media/rapunzel.947d2cd7.png": "/memory-game/static/media/rapunzel.947d2cd7.png",
-    "static/media/raya.6c6d627a.jpeg": "/memory-game/static/media/raya.6c6d627a.jpeg",
-    "static/media/tiana.d6c09b5c.png": "/memory-game/static/media/tiana.d6c09b5c.png"
+    "static/js/2.1311842b.chunk.js.LICENSE.txt": "/memory-game/static/js/2.1311842b.chunk.js.LICENSE.txt",
+    "static/media/anna.png": "/memory-game/static/media/anna.b64a32c6.png",
+    "static/media/ariel.png": "/memory-game/static/media/ariel.269f528d.png",
+    "static/media/aurora.png": "/memory-game/static/media/aurora.fb505559.png",
+    "static/media/belle.jpg": "/memory-game/static/media/belle.529fb2d5.jpg",
+    "static/media/elsa.jpg": "/memory-game/static/media/elsa.d093f80a.jpg",
+    "static/media/jasmine.png": "/memory-game/static/media/jasmine.0744dbe7.png",
+    "static/media/moana.png": "/memory-game/static/media/moana.0859844e.png",
+    "static/media/mulan.png": "/memory-game/static/media/mulan.3a6dfda2.png",
+    "static/media/pocahontas.png": "/memory-game/static/media/pocahontas.a86600f9.png",
+    "static/media/rapunzel.png": "/memory-game/static/media/rapunzel.947d2cd7.png",
+    "static/media/raya.jpeg": "/memory-game/static/media/raya.6c6d627a.jpeg",
+    "static/media/tiana.png": "/memory-game/static/media/tiana.d6c09b5c.png"
   },
   "entrypoints": [
     "static/js/runtime-main.bb0067c4.js",
-    "static/js/2.4d42f155.chunk.js",
+    "static/js/2.1311842b.chunk.js",
     "static/css/main.fe8da854.chunk.css",
-    "static/js/main.b9a185b6.chunk.js"
+    "static/js/main.77bf08f2.chunk.js"
   ]
 }

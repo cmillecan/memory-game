@@ -1,6 +1,6 @@
 # Memory Game
 
-Pick a card and find its match. A memory game built with `React` and `CSS`.\
+Pick a card and find its match. A memory game built with `React`.\
 [View demo](https://cmillecan.github.io/memory-game/) 
 
 ![Memory game](src/images/memory-game.png "memory game")
